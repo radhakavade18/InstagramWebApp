@@ -13,10 +13,8 @@ import {
   Input,
   Row,
 } from 'reactstrap';
-import { useState } from 'react';
 
-const LoginPage = () => {
-  const [isLogin, setLogin] = useState('');
+const SignUpPage = () => {
   return (
     <Container className="mainSection">
       <Row className="d-flex justify-content-center">
@@ -24,26 +22,12 @@ const LoginPage = () => {
           <Card className="bg-white">
             <CardBody>
               <h1 className="text-center instaLogo">Instagram</h1>
-              <Form className="py-3">
-                <Input
-                  type="text"
-                  className="mb-3 customInput"
-                  id="userName"
-                  placeholder="Username, Phone Number or email address"
-                  onChange={e => {
-                    setLogin(e.target.value);
-                  }}
-                />
-                <Input
-                  type="password"
-                  className="mb-3 customInput"
-                  placeholder="Password"
-                  id="userPassword"
-                />
-                <Button block color="primary" size="sm">
-                  Login
-                </Button>
-              </Form>
+              <h6 className="text-center">
+                Sign up to see photos and videos from your friends.
+              </h6>
+              <Button block color="primary" size="sm">
+                Login with Facebook
+              </Button>
               <Row className="d-flex justify-content-center">
                 <Col>
                   <Row>
@@ -57,25 +41,45 @@ const LoginPage = () => {
                   </Row>
                 </Col>
               </Row>
-              <p className="text-center">
-                <a
-                  className="facebookLogin"
-                  href="https://www.facebook.com/login/"
-                >
-                  log in with Facebook
-                </a>
-              </p>
-              <small className="d-flex justify-content-center">
-                <a href="#" className="forgotPassword">
-                  Forgotten your password?
-                </a>
+              <Form className="py-3">
+                <Input
+                  type="text"
+                  className="mb-2 customInput"
+                  id="emailAddress"
+                  placeholder="Mobile number or email address"
+                />
+                <Input
+                  type="text"
+                  className="mb-2 customInput"
+                  id="fullName"
+                  placeholder="Full Name"
+                />
+                <Input
+                  type="text"
+                  className="mb-2 customInput"
+                  id="userName"
+                  placeholder="User name"
+                />
+                <Input
+                  type="password"
+                  className="mb-2 customInput"
+                  placeholder="Password"
+                  id="userPassword"
+                />
+                <Button block color="primary" size="sm" disabled>
+                  Sign Up
+                </Button>
+              </Form>
+              <small className="d-flex justify-content-center text-center">
+                By signing up, you agree to our Terms, Data Policy and Cookie
+                Policy.
               </small>
             </CardBody>
           </Card>
           <Card className="mt-3">
             <CardBody>
               <p className="mb-0 text-center">
-                Don't have an account? <a href="">Sign Up</a>
+                Have an account? <a href="">Log in</a>
               </p>
             </CardBody>
           </Card>
@@ -100,4 +104,4 @@ const LoginPage = () => {
     </Container>
   );
 };
-export default LoginPage;
+export default SignUpPage;

@@ -1,0 +1,25 @@
+a:hover{
+    text-decoration: none;
+}
+
+.mainSection {
+  height: 80vh;
+}
+
+.instaLogo {
+    font-family: 'Lobster', cursive;
+    font-weight: 600;
+}
+
+.customInput {
+    font-size: 14px;
+}
+
+.forgotPassword {
+    color: #00376b;
+}
+
+.facebookLogin{
+    color: #385185;
+    font-weight: 500;
+}

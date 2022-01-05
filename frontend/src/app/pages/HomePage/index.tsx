@@ -4,6 +4,7 @@ import { NavBar } from 'app/components/NavBar';
 import { Masthead } from './Masthead';
 import { PageWrapper } from 'app/components/PageWrapper';
 import LoginPage from '../LoginPage';
+import SignUpPage from '../SignUpPage';
 
 export function HomePage() {
   return (
@@ -17,6 +18,7 @@ export function HomePage() {
       </Helmet>
       <PageWrapper>
         <LoginPage/>
+        {/* <SignUpPage /> */}
         {/* <Masthead /> */}
       </PageWrapper>
     </>

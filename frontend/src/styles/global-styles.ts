@@ -17,6 +17,7 @@ export const GlobalStyle = createGlobalStyle`
 
   body.fontLoaded {
     font-family: 'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background: #fafafa;
   }
   
   p,
